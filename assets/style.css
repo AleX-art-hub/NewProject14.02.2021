@@ -1,0 +1,42 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+}
+.container {
+}
+.contWelcome {
+  background-image: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_660582997_412145.jpg");
+
+  height: 400px;
+  color: white;
+  font-size: 20px;
+}
+.webContainer {
+  text-align: center;
+  height: 200px;
+}
+.wmtContainer {
+  background-color: gray;
+  height: 600px;
+}
+h1 {
+  font-size: 30px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: Black;
+  height: 80px;
+}
+.Other2 {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.contact {
+  background-color: skyblue;
+}
+.about {
+  background-color: darkgray;
+}
