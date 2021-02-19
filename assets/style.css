@@ -1,0 +1,197 @@
+body {
+  background: gray;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  /*display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";*/
+}
+/*#header {
+  grid-area: header;
+}
+#main {
+  grid-area: main;
+}*/
+
+/* Создаём Header*/
+/*#header {
+  min-height: 450px;
+  color: white;
+  text-align: center;
+  background: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  width: 100%;
+  height: 450px;
+}*/
+#header {
+  min-height: 450px;
+  color: white;
+  text-align: center;
+  background: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+
+img {
+  display: grid;
+  width: 100%;
+  height: auto;
+}
+#header h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "AWS AWS PBTM PBTM";
+  grid-area: footer;
+  background-color: black;
+  padding: 35px;
+  font-size: 18px;
+}
+.AWS {
+  grid-area: AWS;
+}
+.PBTM {
+  grid-area: PBTM;
+}
+#header .wrapper,
+#section-a .wrapper {
+  padding: 0 1.5em;
+}
+#section-a {
+  display: grid;
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+#section-b {
+  display: grid;
+  padding: 2em 1em 1em;
+}
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+#other {
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  background: white;
+  color: black;
+  padding: 35px;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+#other2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  color: white;
+  grid-template-areas: "box box box1 box1";
+}
+.box {
+  grid-area: box;
+}
+.box1 {
+  background: rgb(41, 41, 41);
+  grid-area: box1;
+}
+
+#other2 .box:first-child {
+  background: #2690d4;
+  padding: 35px;
+}
+.box1 {
+  padding: 35px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  font-size: 17.6px;
+  margin: 0;
+  padding: 1em 0;
+}
+.btn {
+  display: inline-block;
+  background: rgb(49, 49, 49);
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid rgb(105, 105, 105);
+}
+a.btn {
+  padding: 18px 35;
+  margin: 10px 0px;
+}
+
+.btn:hover {
+  background: white;
+  color: rgb(41, 41, 41);
+}
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+  }
+  #section-a .text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .text p {
+    padding-top: 0;
+  }
+
+  .wrapper,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b li {
+    width: 30%;
+  }
+}

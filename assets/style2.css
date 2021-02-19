@@ -1,0 +1,79 @@
+body {
+  background: gray;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+#header {
+  grid-area: header;
+}
+#main {
+  grid-area: main;
+}
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "AWS AWS PBTM PBTM";
+  grid-area: footer;
+  background-color: black;
+  padding: 35px;
+  font-size: 18px;
+}
+.AWS {
+  grid-area: AWS;
+}
+.PBTM {
+  grid-area: PBTM;
+}
+#other {
+  grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  background: white;
+  color: black;
+  padding: 35px;
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+#other2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  color: white;
+  grid-template-areas: "box box box1 box1";
+}
+.box {
+  grid-area: box;
+}
+.box1 {
+  background: rgb(41, 41, 41);
+  grid-area: box1;
+}
+
+#other2 .box:first-child {
+  background: #2690d4;
+  padding: 35px;
+}
+.box1 {
+  padding: 35px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
